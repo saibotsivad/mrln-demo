@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    environment: test
+    environment: production
     runs-on: ubuntu-latest
     strategy:
       matrix:
