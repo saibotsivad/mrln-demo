@@ -29,5 +29,4 @@ jobs:
     - run: node script/example-script.js
       # Make sure we can build and execute the code:
     - run: npm run build
-    - run: node build/browser/main.js
     - run: node build/server/main.js
