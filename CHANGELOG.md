@@ -14,18 +14,6 @@ Change categories are:
 * `Fixed` for any bug fixes.
 * `Security` to invite users to upgrade in case of vulnerabilities.
 
-## [Unreleased]
-### Added
-### Changed
-### Deprecated
-### Fixed
-### Removed
-### Security
-
-## [0.0.0] - {{TODO_CURRENT_DATE}}
+## [0.0.0](https://github.com/saibotsivad/mrln-demo/tree/v0.0.0) - 2023-11-23
 ### Added
 - Created the base project from [saibotsivad/init](https://github.com/saibotsivad/init).
-
-[Unreleased]: https://github.com/saibotsivad/{{TODO_REPO_NAME}}/compare/v0.0.0...HEAD
-[0.0.1]: https://github.com/saibotsivad/{{TODO_REPO_NAME}}/compare/v0.0.0...v0.0.1
-[0.0.0]: https://github.com/saibotsivad/{{TODO_REPO_NAME}}/tree/v0.0.0

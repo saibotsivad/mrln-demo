@@ -1,31 +1,41 @@
 {
-  "name": "{{TODO_REPO_NAME}}",
+  "name": "mrln-demo",
   "version": "0.0.0",
-  "description": "{{TODO_DESCRIPTION}}",
+  "description": "Demo of mrln, the monorepo symlink tool.",
   "type": "module",
-  "module": "dist/index.js",
-  "unpkg": "dist/index.min.js",
-  "main": "dist/index.cjs",
-  "types": "index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
-    "test": "uvu src",
-    "build": "bundt src/index.js",
-    "lint": "eslint"
+    "postinstall": "mrln --jsconfig",
+    "example-script": "node script/example-script.js",
+    "build": "rollup -c"
+  },
+  "mrln": {
+    "prefix": "@",
+    "links": [
+      "app/*/package.json"
+    ],
+    "root": {
+      "shared": "_shared"
+    },
+    "folder": {
+      "lib": "_lib"
+    },
+    "jsconfig": {
+      "auto": true,
+      "indent": "\t",
+      "compilerOptions": {
+        "rootDirs": [
+          "./"
+        ],
+        "moduleResolution": "node",
+        "module": "es6",
+        "target": "es6"
+      }
+    }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saibotsivad/{{TODO_REPO_NAME}}.git"
+    "url": "git+https://github.com/saibotsivad/mrln-demo.git"
   },
-  "keywords": [
-    "{{TODO_KEYWORDS}}"
-  ],
   "author": {
     "name": "Tobias Davis",
     "email": "tobias@davistobias.com",
@@ -33,10 +43,14 @@
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/saibotsivad/{{TODO_REPO_NAME}}/issues"
+    "url": "https://github.com/saibotsivad/mrln-demo/issues"
   },
-  "homepage": "https://github.com/saibotsivad/{{TODO_REPO_NAME}}",
+  "homepage": "https://github.com/saibotsivad/mrln-demo",
   "devDependencies": {
-    "@saibotsivad/eslint-config-saibotsivad": "*"
+    "mrln": "^1.0.1"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.5.1"
   }
 }

@@ -2,13 +2,9 @@
 /node_modules
 .DS_Store
 
-# personal local files
-/configuration.js
-/configuration.sh
-/fiddle.js
+# things added by mrln
+/app/*/node_modules
+/app/*/jsconfig.json
 
-# globbed things
-globbed-*.js
-
-# built things
-/dist
+# build output
+/build
