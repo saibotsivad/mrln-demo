@@ -7,4 +7,4 @@
 /app/*/jsconfig.json
 
 # build output
-/build
+/deploy/*/build

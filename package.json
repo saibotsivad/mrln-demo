@@ -47,10 +47,8 @@
   },
   "homepage": "https://github.com/saibotsivad/mrln-demo",
   "devDependencies": {
-    "mrln": "^1.0.1"
-  },
-  "dependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "mrln": "^1.0.1",
     "rollup": "^4.5.1"
   }
 }

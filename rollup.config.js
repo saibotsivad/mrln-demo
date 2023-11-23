@@ -6,7 +6,7 @@ export default [
 		output: {
 			sourcemap: true,
 			format: 'es',
-			dir: 'build/browser',
+			dir: 'deploy/browser/build',
 		},
 		plugins: [
 			resolve({
@@ -19,8 +19,9 @@ export default [
 		input: 'app/server/main.js',
 		output: {
 			sourcemap: true,
-			format: 'es',
-			dir: 'build/server',
+			format: 'cjs',
+			exports: undefined,
+			dir: 'deploy/server/build',
 		},
 		plugins: [
 			resolve({
