@@ -19,8 +19,7 @@ export default [
 		input: 'app/server/main.js',
 		output: {
 			sourcemap: true,
-			format: 'cjs',
-			exports: undefined,
+			format: 'es',
 			dir: 'build/server',
 		},
 		plugins: [
